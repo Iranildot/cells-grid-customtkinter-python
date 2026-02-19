@@ -200,6 +200,8 @@ grid.load_cells(
 root.mainloop()
 ```
 
+<img width="1920" height="1080" alt="cells_grid" src="https://github.com/user-attachments/assets/7e8bb2c3-6fb6-4b78-9212-3ff0138390ad" />
+
 ------------------------------------------------------------------------
 
 ## ✅ Use Cases
