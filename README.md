@@ -178,17 +178,26 @@ cells[1][2].configure(border_color="blue")
 ## 🧪 Usage Example
 
 ``` python
-grid = CellsGrid(app, width=400, height=400, margin=20, padding=10)
+root = ctk.CTk()
+
+root.geometry("600x600")
+root.rowconfigure(0, weight=1)
+root.columnconfigure(0, weight=1)
+ctk.set_appearance_mode("light")
+
+grid = CellsGrid(root, width=400, height=400, margin=20, padding=10)
 grid.grid(row=0, column=0)
 
 grid.load_cells(
     array=(3, 3),
     cells_spacing=12,
     cells_corner_radius=12,
-    cells_fg_color="#2b2b2b",
+    cells_fg_color="#999999",
     cells_border_color="#444",
     cells_border_width=2
 )
+
+root.mainloop()
 ```
 
 ------------------------------------------------------------------------
